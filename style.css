@@ -1,0 +1,599 @@
+body{
+    margin: 0;
+    color: azure;
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+header .container{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 64px;
+    justify-content: space-between;
+}
+header .container_left{
+    display: flex;
+    height: 75%;
+    width: 69%;
+    margin-left: 52px;
+    padding: 8px 0px;
+}
+
+header .container_left .a_logo{
+    margin-left: 61px;
+}
+header .container_left .logo{
+    margin-top: -8px;
+    font-size: 29px;
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header .container_left .left_menu{
+    display: flex;
+    gap: 9px;
+    padding: 11px;
+    height: 75%;
+}
+
+header .container_left .a{
+    padding-left: 20px;
+}
+
+header .container_left a{
+    font-size: 14px;
+    color: #FFFF;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+header .container_left .down_arrow{
+    height: 40px;
+    width: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+header .container_left .drop_down{  /*--------------drope_down----------*/
+    background: #ffffff;
+    box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.16);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    width: 246px;
+    height: 432px;
+    margin-top: 26px;
+    left: 390px;
+    border-radius: 8px;
+}
+
+header .container_left .down_arrow:hover .drop_down{
+    display: block;
+}
+
+header .container_left .drop_down .content{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+header .container_left .drop_down .a_tag{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    display: flex;
+}
+
+header .container_left .drop_down a{
+    color: #757575;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+header .container_left .drop_down .a_tag:hover{
+    background-color: rgba(137, 137, 133, 0.641);
+}
+
+
+header .container_right{
+    width: 31%;
+    padding-left: 164px;
+}
+
+header .container_right a{
+    padding-left: 26px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+}
+header .container_right button{
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    padding: 10px 12px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+header .container_right button:hover{
+    background-color: #d4d0d0;
+}
+
+/* ---------------------------------------------------------section 1------------------------------------------------------------------------*/
+
+
+main .outer_container .container_1{
+    padding: 64px 192px;
+}
+
+main .outer_container .container_2{
+    display: flex;
+    height: 80vh;
+}
+
+main .outer_container .container_left{
+    width: 50%;
+}
+main .outer_container .container_left h1{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 0px;
+}
+
+main .outer_container .container_left .outer_destination_container{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+main .outer_container .container_left .destination_container{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 16px;
+}
+
+main .outer_container .destination_container .location_container{
+    display: flex;
+    max-width: 396px;
+    flex-direction: column;
+    gap: 16px;
+}
+main .outer_container .destination_container .pickup_location,.dropoff_location{
+    display: flex;
+    width: 100%;
+    background-color: #F3F3F3;
+    height: 42.7px;
+    border-radius: 8px;
+}
+
+main .outer_container .location_container input{
+    width: 78%;
+    height: 87%;
+    border: none;
+    background: #F3F3F3;
+    outline: none;
+    margin-left: 0px
+}
+
+main .outer_container .pickup_location:focus-within{
+    border: 1px solid black;
+}
+
+main .outer_container .dropoff_location:focus-within{
+    border: 1px solid black;
+}
+
+
+main .outer_container .location_container .icon_1{
+    padding: 10px 14px;
+}
+main .outer_container .location_container .icon_2{
+    padding: 14px;
+}
+
+main .outer_container .location_container .line{
+    position: absolute;
+    height: 36px;
+    border-left: 1px solid black;
+    margin: 28px 18px
+}
+
+main .outer_container .date_and_time .date,.time{
+    display: flex;
+}
+
+main .outer_container .date_and_time input{
+    width: 77%;
+    height: 86%;
+    border: none;
+    background: #F3F3F3;
+    outline: none;
+}
+
+main .outer_container .date_and_time{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+main .outer_container .date,.time{
+    width:50%;
+    background-color: #F3F3F3;
+    height: 42.7px;
+    border-radius: 8px;
+}
+
+main .outer_container .date_and_time .icon_1{
+    padding: 10px;
+}
+
+main .outer_container .outer_destination_container button{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 8px;
+    padding: 14px 25px;
+    background-color: black;
+    color: #F3F3F3;
+}
+
+main .outer_container .container_right{
+    width: 50%;
+}
+main .outer_container .container_right .map{
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------------------------------------------section 2------------------------------------------------------------------------*/
+
+main .outer_container_2{
+    max-width: 1280px;
+    padding: 64px;
+    margin-right: 116px;
+    margin-left: 116px;
+}
+main .outer_container_2 .container_1{
+    max-width: 1280px;
+    
+}
+main .outer_container_2 .container_1 .H3{
+    
+}
+
+main .outer_container_2 .container_2 .H3 h3{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #000;
+}
+main .outer_container_2 .ride_and_reverse{
+    display: flex;
+    width: 1128px;
+}
+main .outer_container_2 .ride_and_reverse .ride,.reverse{
+    margin-bottom: 18px;
+    margin-right: 18px;
+    height: 160px;
+    width: 364.26px;
+}
+
+main .outer_container_2 .ride a,.reverse a{
+    background-color: #F3F3F3;
+    display: flex;
+    border-radius: 8px;
+    height: 128px;
+    width: 339.9px;
+    padding: 16px;
+    text-decoration: none;
+    color: #000;
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .ride a .text,.reverse a .text{
+    font-size: 16px;
+}
+
+main .ride a p,.reverse a p{
+    font-size: 12px;
+}
+
+main .ride a button,.reverse a button{
+    background-color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-radius: 30px;
+    border: 0px;
+    cursor: pointer;
+}
+
+main .ride a button:hover,
+main .reverse a button:hover{
+    background-color: #d4d0d0;
+}
+
+main .ride a img,.reverse img{
+    height: 128px;
+    width: 128px
+}
+
+/*----------------------------------------------------------section-3,4,5(part 03- part 05)---------------------------------------------------------------*/
+
+main .outer_container_3{
+    width: 1512px;
+    height: 1480px;
+
+}
+
+main .outer_container_3 .container_1{
+    width: 1280px;
+    height: 100%;
+    margin-left: 116px;
+    margin-right: 116px;
+
+}
+
+main .outer_container_3 .container_2{
+    padding: 64px;
+
+}
+
+main .outer_container_3 .container_2{
+    padding: 64px;
+
+}
+
+main .outer_container_3 .text_1{
+    height: 64px;
+    width: 1152px;
+    margin-bottom: 32px;
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+main .outer_container_3 .text_1 h1{
+    color: #000;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+main .outer_container_3 .text_2 p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+main .outer_container_3 .text_3{
+    display: flex;
+    flex-direction: row;
+}
+
+main .outer_container_3 .button{
+    padding-right: 30px;
+}
+
+main .outer_container_3 button{
+    background-color: #000;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 14px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main .outer_container_3 button:hover{
+    background-color: #2c2a2a;
+}
+
+main .outer_container_3 .text_3{
+    display: flex;
+    align-items: center;
+    padding-top: 19px;
+}
+
+main .outer_container_3 .text_3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+main .outer_container_3 img{
+    height: 100%;
+    width: 100%;
+}
+
+/* ---------------------------------------------------------section 6(container 04)------------------------------------------------------------------------*/
+
+main .outer_container_4{
+    background-color: #F3F3F3;
+    height: 406px;
+    width: 1512.8px;
+}
+
+main .outer_container_4 .container_1{
+    margin-left: 116px;
+    margin-right: 116px;
+}
+
+main .outer_container_4 .container_2{
+    display: grid;
+    row-gap: 36px;
+    padding: 64px;
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+}
+
+main .outer_container_4 .text_container h2{
+    margin: 0px;
+    font-size: 32px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+main .outer_container_4 .scanner_cantainer{
+    display: flex;
+    column-gap: 36px;
+}
+
+main .outer_container_4 .scanner_1,.scanner_2{
+    display: flex;
+    height: 198px;
+    width: 558px;
+    background-color: #FFFFFF;
+}
+main .outer_container_4 .scanner_1 a,.scanner_2 a{
+    color: #000;
+    text-decoration: none;
+}
+
+main .outer_container_4 .sc_img{
+    width: 150px;
+    height: 150px;
+    padding: 23px 0px 23px 23px;
+}
+
+main .outer_container_4 .scanner_text{
+    padding: 24px 48px 24px 24px;
+}
+
+main .outer_container_4 .side_arrow{
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+main .outer_container_4 .scanner_1:hover .side_arrow,
+main .outer_container_4 .scanner_2:hover .side_arrow{
+    transform: translateX(8px);
+}
+
+/* -----------------------------------------------------***Footer***------------------------------------------------------------------------*/
+
+.footer{
+    width: 1512.8px;
+    height: 917.5px;
+    background-color: rgb(0,0,0);
+}
+
+.footer .footer_container_1{
+    margin-left: 116px;
+    margin-right: 116px;
+}
+
+.footer .footer_container_2{
+    padding: 64px;
+}
+
+.footer_container_2 .heading a{
+    line-height: 112px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer_container_2 .sub-heading a{
+    text-decoration: none;
+}
+.footer_container_2 .sub-heading p{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer_container_2 .section_2{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 36px;
+}
+
+
+.footer_container_2 .section_2_heading{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.footer_container_2 .section_2 a{
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 14px;
+}
+
+.footer_container_2 .section_3{
+    margin-top: 87px;
+    height: 162.7px;
+    width: 1152px;
+}
+
+
+
+.footer_container_2 .section_3 .section_3_1{
+    display: flex;
+}
+
+.footer_container_2 .section_3 .section_3_1 .icons{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2px;
+}
+
+#icone{
+    padding-right: 91px;
+}
+
+.footer_container_2 .section_3 .section_3_1 .langauge_and_location{
+    padding-left: 455px;
+}
+
+.footer_container_2 .section_3 .section_3_1 button{
+    padding: 10px 12px;
+    background-color: #000;
+    color: #FFFFFF;
+    border: none;
+}
+
+.footer_container_2 .section_3 .section_3_2{
+    padding-top:45px;
+}
+
+.footer_container_2 .section_3 .section_3_2 .stores{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_container_2 .section_3 .section_3_2 img{
+    height: 37px;
+    width: 128px;
+}
+
+.footer_container_2 .section_4{
+    display: flex;
+}
+
+
+.footer_container_2 .section_4 .left{
+    width: 80%;
+}
+
+.footer_container_2 .section_4 .left p{
+    color: #AFAFAF;
+    font-size: 12px;
+}
+
+
+.footer_container_2 .section_4 .right a{
+    margin-left: 24px;
+    color: #AFAFAF;
+    font-size: 12px;
+    text-decoration: none;
+}
+
